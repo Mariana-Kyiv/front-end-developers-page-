@@ -1,0 +1,136 @@
+:root {
+    --primary-color: rgba(37, 76, 106);
+    --secondary-color: #ebecf0ff;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    --accent-color: rgba(204, 217, 232);
+    --shadow: #9CB6D3;
+}
+
+body {
+    margin-top: 100px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 24px;
+    opacity: 0.7;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.navigation-links {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.navigation-links a {
+    margin: 20px;
+    transition: 200ms ease-in-out;
+}
+.navigation-links a:hover {
+    color: var(--accent-color);
+    background-color: var(--shadow);
+    border-radius: 4px;
+}
+
+.primary-link {
+    border-radius: 4px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: var(--accent-color);
+    transition: 200ms ease-in-out;
+}
+
+.primary-link:hover {
+    color: aliceblue;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.secondary-link {
+    border-radius: 4px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+    color: var(--primary-color);
+    text-align: center;
+    display: block;
+}
+
+.about-paragraphs {
+    margin: 30px 0;
+}
+
+.about-paragraphs p {
+    margin: 10px;
+}
+
+.email-link {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    img {
+             display: none
+         }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+    img {
+        display: none;
+    }
+}
